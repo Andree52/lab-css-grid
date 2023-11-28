@@ -1,4 +1,31 @@
-/* Write your CSS here! */
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  background-color: #f1f1f1;
+  padding: 10px;
+ }
+ 
+ .grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+ }
+ 
+ .sidebar {
+  grid-column: 1;
+ }
+ 
+ .main-content {
+  grid-column: 2 / span 2;
+ }
+ 
+ .footer {
+  grid-column: 1 / span 3;
+ }
+
 
 /* Do not change the CSS below. */
 
@@ -30,6 +57,7 @@
   background: #2d2d2d;
   color: white;
   text-align: center;
+  grid-column: 1;
 }
 
 .main {
